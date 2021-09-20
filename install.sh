@@ -19,3 +19,6 @@ cargo install cargo-edit
 # Create symlinks for config files
 
 ln -s ./.config/fish/config.fish ~/.config/fish/config.fish
+
+# Install gnome-tweaks, then open tweaks and set emacs input -> true
+sudo apt install gnome-tweaks
