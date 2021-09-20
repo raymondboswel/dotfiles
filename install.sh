@@ -22,3 +22,5 @@ ln -s ./.config/fish/config.fish ~/.config/fish/config.fish
 
 # Install gnome-tweaks, then open tweaks and set emacs input -> true
 sudo apt install gnome-tweaks
+
+# If using varmilo keyboard follow first suggestion here: https://unix.stackexchange.com/questions/604791/keyboard-function-keys-always-trigger-media-shortcuts-regardless-of-whether-fn and here https://wiki.archlinux.org/title/Apple_Keyboard#Function_keys_do_not_work
