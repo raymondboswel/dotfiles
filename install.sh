@@ -54,3 +54,23 @@ docker-compose --version
 #Node/npm/yarn/nvm
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 fisher install jorgebucaran/nvm.fish
+
+#Emacs
+
+## Angular LSP
+npm install -g @angular/language-service@next typescript @angular/language-server
+
+# Update paths in angular.el in prelude config accordingly
+
+#Neovim
+mkdir ~/bin
+cd ~/bin
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+
+sudo update-alternatives --install /usr/bin/vi vi ~/bin/nvim.appimage 60
+sudo update-alternatives --config vi
+sudo update-alternatives --install /usr/bin/vim vim ~/bin/nvim.appimage 60
+sudo update-alternatives --config vim
+sudo update-alternatives --install /usr/bin/editor editor ~/bin/nvim.appimage 60
+sudo update-alternatives --config editor
