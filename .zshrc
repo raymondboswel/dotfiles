@@ -28,3 +28,16 @@ co() {
 br() {
   git checkout -b $1
 }
+
+cm() {
+  git commit -m $1
+}
+
+push() {
+  git push
+}
+
+push-up() {
+  BRANCH=$(git symbolic-ref --short HEAD)
+  git push --set-upstream origin $BRANCH
+}
