@@ -21,6 +21,10 @@ source /etc/profile.d/vte.sh
 
 . /opt/asdf-vm/asdf.sh
 
+gadd() {
+  git add .
+}
+
 co() {
    git checkout $1 && git pull
 }
