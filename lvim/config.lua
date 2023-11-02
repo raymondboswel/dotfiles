@@ -275,7 +275,8 @@ ls.load { paths = { "~/.config/lvim/snippets/" } }
 --   -- filetypes = { "astro" }
 
 -- }
-vim.opt.smartindent = true -- make indenting smarter again
+vim.o.autoindent = true
+vim.o.smartindent = true -- make indenting smarter again
 vim.o.scrolloff = 10
 vim.o.relativenumber = true
 --vim.o.
