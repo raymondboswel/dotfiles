@@ -297,5 +297,5 @@ local function map(mode, lhs, rhs, opts)
   vim.keymap.set(mode, lhs, rhs, options)
 end
 
-map("n", "<C-j>", ":cnext<CR>")
-map("n", "<C->", ":cprev<CR>")
+map("n", "<C-J>", ":cnext<CR>")
+map("n", "<C-K", ":cprev<CR>")
