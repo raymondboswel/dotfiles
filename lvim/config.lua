@@ -262,8 +262,6 @@ local ls = require "luasnip/loaders/from_vscode"
 
 ls.load { paths = { "~/.config/lvim/snippets/" } }
 
-
-
 -- require('lspconfig').astro.setup { init_options = { on_attach = on_attach, capabilities = capabilities,
 --   configuration = {},
 --   typescript = { serverPath = '/home/raymond/.local/share/nvim/mason/packages/typescript-language-server/node_modules/typescript/lib/tsserverlibrary.js', }, }, }
