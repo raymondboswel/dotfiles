@@ -204,6 +204,7 @@ lvim.plugins = {
 -- vim.cmd('colorscheme flexoki')
 -- lvim.colorscheme = "flexoki"
 -- lvim.colorscheme = "desert"
+lvim.colorscheme = "ayu"
 
 -- require('packer').startup(function(use)
 --   use({ 'stevedylandev/flexoki-nvim', as = 'flexoki' })
