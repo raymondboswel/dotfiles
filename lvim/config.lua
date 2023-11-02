@@ -278,22 +278,9 @@ local ls = require "luasnip/loaders/from_vscode"
 
 ls.load { paths = { "~/.config/lvim/snippets/" } }
 
--- require('lspconfig').astro.setup { init_options = { on_attach = on_attach, capabilities = capabilities,
---   configuration = {},
---   typescript = { serverPath = '/home/raymond/.local/share/nvim/mason/packages/typescript-language-server/node_modules/typescript/lib/tsserverlibrary.js', }, }, }
-
--- require 'lspconfig'.astro.setup {}
-
--- require 'lspconfig'.astro.setup {
---   init = { typescript = { serverPath = vim.fs.normalize '/home/raymond/.local/share/nvim/mason/packages/typescript-language-server/node_modules/typescript/lib/tsserverlibrary.js' } },
---   command = { "astro-ls", "--stdio" },
---   filetypes = { "astro" },
---   -- root_dir = .util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git"),
---   -- filetypes = { "astro" }
-
--- }
 vim.o.autoindent = true
 vim.o.smartindent = true -- make indenting smarter again
 vim.o.scrolloff = 10
 vim.o.relativenumber = true
---vim.o.
+
+nnoremap <C-j> :cnext<CR>
