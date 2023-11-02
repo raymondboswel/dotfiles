@@ -196,7 +196,7 @@ lvim.plugins = {
     end
   },
   {
-    "ayu"
+    "Shatur/neovim-ayu"
   }
 }
 
@@ -204,6 +204,14 @@ lvim.plugins = {
 -- vim.cmd('colorscheme flexoki')
 -- lvim.colorscheme = "flexoki"
 -- lvim.colorscheme = "desert"
+
+-- require('packer').startup(function(use)
+--   use({ 'stevedylandev/flexoki-nvim', as = 'flexoki' })
+--   -- Set colorscheme after options
+--   vim.cmd('colorscheme flexoki')
+
+-- end)
+
 
 -- require('ayu').setup({
 --   mirage = false, -- Set to `true` to use `mirage` variant instead of `dark` for dark background.
