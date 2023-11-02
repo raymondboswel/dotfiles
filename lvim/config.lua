@@ -283,4 +283,18 @@ vim.o.smartindent = true -- make indenting smarter again
 vim.o.scrolloff = 10
 vim.o.relativenumber = true
 
-nnoremap <C-j> :cnext<CR>
+
+----- REMAP Section ------
+
+local function map(mode, lhs, rhs, opts)
+  local options = { noremap = true, silent = true }
+  if opts then
+    if opts.desc then
+      opts.desc = "keymaps.lua: " .. opts.desc
+    end
+    options = vim.tbl_extend('force', options, opts)
+  end
+  vim.keymap.set(mode, lhs, rhs, options)
+end
+
+map("n", "<C-j>", ":cnext<CR>")
