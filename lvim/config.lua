@@ -94,6 +94,9 @@ require 'nvim-treesitter.configs'.setup {
       node_decremental = "<c-backspace>",
     },
   },
+  indent = {
+    enable = false
+  }
 }
 
 -- generic LSP settings
