@@ -298,3 +298,4 @@ local function map(mode, lhs, rhs, opts)
 end
 
 map("n", "<C-j>", ":cnext<CR>")
+map("n", "<C->", ":cprev<CR>")
