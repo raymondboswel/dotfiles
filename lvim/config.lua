@@ -8,19 +8,24 @@ an executable
 ]]
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
--- general
+-- GENERAL
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "onedarker"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
--- keymappings [view all the defaults by pressing <leader>Lk]
+-- KEYMAPPINGS [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+
+
+map("n", "<C-J>", ":cnext<CR>")
+map("n", "<C-K", ":cprev<CR>")
+
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
@@ -282,20 +287,3 @@ vim.o.autoindent = true
 vim.o.smartindent = true -- make indenting smarter again
 vim.o.scrolloff = 10
 vim.o.relativenumber = true
-
-
------ REMAP Section ------
-
-local function map(mode, lhs, rhs, opts)
-  local options = { noremap = true, silent = true }
-  if opts then
-    if opts.desc then
-      opts.desc = "keymaps.lua: " .. opts.desc
-    end
-    options = vim.tbl_extend('force', options, opts)
-  end
-  vim.keymap.set(mode, lhs, rhs, options)
-end
-
-map("n", "<C-J>", ":cnext<CR>")
-map("n", "<C-K", ":cprev<CR>")
