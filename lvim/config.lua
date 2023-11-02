@@ -21,10 +21,8 @@ lvim.leader = "space"
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
-
-
-map("n", "<C-J>", ":cnext<CR>")
-map("n", "<C-K", ":cprev<CR>")
+lvim.keys.normal_mode["<C-J>"] = ":cnext<CR>"
+lvim.keys.normal_mode["<C-K>"] = ":cprev<CR>"
 
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
