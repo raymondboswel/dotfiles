@@ -270,7 +270,7 @@ formatters.setup {
   },
   {
     command = "prettier",
-    extra_args = { "--print-with", "120" },
+    -- extra_args = { "--print-with", "120" },
     filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact", "css", "scss" },
   },
 }
