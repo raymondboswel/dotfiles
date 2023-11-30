@@ -189,15 +189,15 @@ lvim.plugins = {
       require("nvim-ts-autotag").setup()
     end,
   },
-  {
-    'stevedylandev/flexoki-nvim',
-    config = function(use)
-      use({ 'stevedylandev/flexoki-nvim', as = 'flexoki' })
-      -- Set colorscheme after options
-      vim.cmd('colorscheme flexoki')
+  -- {
+  --   'stevedylandev/flexoki-nvim',
+  --   config = function(use)
+  --     use({ 'stevedylandev/flexoki-nvim', as = 'flexoki' })
+  --     -- Set colorscheme after options
+  --     vim.cmd('colorscheme flexoki')
 
-    end
-  },
+  --   end
+  -- },
   {
     "Shatur/neovim-ayu"
   }
