@@ -286,3 +286,24 @@ vim.o.autoindent = true
 vim.o.smartindent = true -- make indenting smarter again
 vim.o.scrolloff = 10
 vim.o.relativenumber = true
+
+
+---- CONFIGURE DAP for dotnet -------
+local dap = require('dap')
+
+dap.adapters.coreclr = {
+  type = 'executable',
+  command = '/home/raymond/bin/netcoredbg',
+  args = {'--interpreter=vscode'}
+}
+
+dap.configurations.cs = {
+  {
+    type = "coreclr",
+    name = "launch - netcoredbg",
+    request = "launch",
+    program = function()
+        return vim.fn.input('Path to dll', vim.fn.getcwd() .. '/bin/Debug/', 'file')
+    end,
+  },
+}
