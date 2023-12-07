@@ -25,6 +25,7 @@ lvim.keys.normal_mode["<C-q-j>"] = ":cnext<CR>"
 lvim.keys.normal_mode["<C-q-k>"] = ":cprev<CR>"
 lvim.keys.insert_mode["jk"] = "<ESC>"
 lvim.builtin.terminal.open_mapping = "<c-t>"
+lvim.keys.normal_mode["T"] = ":tabnew +term"
 
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
