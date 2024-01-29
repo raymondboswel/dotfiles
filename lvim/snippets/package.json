@@ -12,6 +12,12 @@
           "typescriptreact"
         ],
         "path": "./solid.json"
+      },
+      {
+        "language": [
+          "cs"
+        ],
+        "path": "./csharp"
       }
     ]
   }
