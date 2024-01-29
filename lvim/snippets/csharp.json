@@ -3,14 +3,8 @@
     "prefix": "doc",
     "body": [
       "/// <summary>",
-      "/// Constructor",
+      "/// ${1}",
       "/// </summary>"
-    ]
-  },
-  "SolidStore": {
-    "prefix": "sstore",
-    "body": [
-      "const [$1, set$1] = createStore($2);"
     ]
   }
 }
