@@ -8,11 +8,9 @@
     ]
   },
   "doc": {
-    "prefix": "doc",
+    "prefix": "doci",
     "body": [
-      "/// <summary>",
-      "/// ${1}",
-      "/// </summary>"
+      "/// <inheritdoc />"
     ]
   }
 }
