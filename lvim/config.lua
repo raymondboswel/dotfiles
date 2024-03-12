@@ -205,30 +205,19 @@ lvim.plugins = {
   {
     "Shatur/neovim-ayu"
   },
+  { "nvim-lua/plenary.nvim" },
   {
     "epwalsh/obsidian.nvim",
-    config = function(use)
-      use({
-        "epwalsh/obsidian.nvim",
-        tag = "*", -- recommended, use latest release instead of latest commit
-        requires = {
-          -- Required.
-          "nvim-lua/plenary.nvim",
-
-          -- see below for full list of optional dependencies 👇
+    config = function()
+      require("obsidian").setup({
+        workspaces = {
+          {
+            name = "personal",
+            path = "~/Notes/Raymond-Notes/",
+          },
         },
-        config = function()
-          require("obsidian").setup({
-            workspaces = {
-              {
-                name = "personal",
-                path = "~/Notes/Raymond-Notes/",
-              },
-            },
-          })
-        end,
       })
-    end
+    end,
   }
 }
 
