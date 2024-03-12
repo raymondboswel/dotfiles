@@ -222,7 +222,7 @@ lvim.plugins = {
 }
 
 -- required by obsidian: https://github.com/epwalsh/obsidian.nvim/issues/286
-vim.opt_local.conceallevel = 2
+lvim.opt_local.conceallevel = 2
 
 
 -- vim.cmd('colorscheme flexoki')
