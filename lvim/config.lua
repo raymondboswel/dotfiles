@@ -205,6 +205,33 @@ lvim.plugins = {
   }
 }
 
+use({
+  "epwalsh/obsidian.nvim",
+  tag = "*", -- recommended, use latest release instead of latest commit
+  requires = {
+    -- Required.
+    "nvim-lua/plenary.nvim",
+
+    -- see below for full list of optional dependencies 👇
+  },
+  config = function()
+    require("obsidian").setup({
+      workspaces = {
+        {
+          name = "personal",
+          path = "~/vaults/personal",
+        },
+        {
+          name = "work",
+          path = "~/vaults/work",
+        },
+      },
+
+      -- see below for full list of options 👇
+    })
+  end,
+})
+
 
 -- vim.cmd('colorscheme flexoki')
 -- lvim.colorscheme = "flexoki"
@@ -295,7 +322,7 @@ local dap = require('dap')
 dap.adapters.coreclr = {
   type = 'executable',
   command = '/home/raymond/bin/netcoredbg',
-  args = {'--interpreter=vscode'}
+  args = { '--interpreter=vscode' }
 }
 
 dap.configurations.cs = {
@@ -304,7 +331,7 @@ dap.configurations.cs = {
     name = "launch - netcoredbg",
     request = "launch",
     program = function()
-        return vim.fn.input('Path to dll', vim.fn.getcwd() .. '/bin/Debug/', 'file')
+      return vim.fn.input('Path to dll', vim.fn.getcwd() .. '/bin/Debug/', 'file')
     end,
   },
 }
@@ -321,4 +348,3 @@ dap.configurations.cs = {
 -- nnoremap <silent> <Leader>lp <Cmd>lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>
 -- nnoremap <silent> <Leader>dr <Cmd>lua require'dap'.repl.open()<CR>
 -- nnoremap <silent> <Leader>dl <Cmd>lua require'dap'.run_last()<CR>
-
