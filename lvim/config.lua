@@ -222,15 +222,9 @@ lvim.plugins = {
             workspaces = {
               {
                 name = "personal",
-                path = "~/vaults/personal",
-              },
-              {
-                name = "work",
-                path = "~/vaults/work",
+                path = "~/Notes/Raymond-Notes/",
               },
             },
-
-            -- see below for full list of options 👇
           })
         end,
       })
