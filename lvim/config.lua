@@ -28,6 +28,7 @@ lvim.builtin.terminal.open_mapping = "<c-t>"
 lvim.keys.normal_mode["T"] = ":tabnew +term <CR>"
 
 lvim.keys.normal_mode["<Leader>od"] = ":ObsidianDailies<CR>"
+lvim.keys.normal_mode["<Leader>on"] = ":ObsidianNew<CR>"
 
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
