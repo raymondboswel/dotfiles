@@ -7,7 +7,7 @@
       "/// </summary>"
     ]
   },
-  "doc": {
+  "doci": {
     "prefix": "doci",
     "body": [
       "/// <inheritdoc />"
