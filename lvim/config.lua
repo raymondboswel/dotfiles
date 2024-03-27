@@ -190,6 +190,7 @@ require 'nvim-treesitter.configs'.setup {
   }
 } -- Additional Plugins
 lvim.plugins = {
+  { "github/copilot.vim" },
   {
     "windwp/nvim-ts-autotag",
     config = function()
