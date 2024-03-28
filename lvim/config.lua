@@ -254,7 +254,9 @@ lvim.plugins = {
   }
 }
 
-vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
+--#region
+
+vim.keymap.set('i', '<C-Tab>', 'copilot#Accept("\\<CR>")', {
   expr = true,
   replace_keycodes = false
 })
