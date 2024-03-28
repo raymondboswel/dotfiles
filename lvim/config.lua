@@ -336,7 +336,6 @@ ls.load { paths = { "~/.config/lvim/snippets/" } }
 vim.o.autoindent = true
 vim.o.smartindent = true -- make indenting smarter again
 vim.o.scrolloff = 10
-vim.o.relativenumber = true
 
 
 ---- CONFIGURE DAP for dotnet -------
