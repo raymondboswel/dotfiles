@@ -254,9 +254,11 @@ lvim.plugins = {
   }
 }
 
+vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false
+})
 vim.g.copilot_no_tab_map = true
-vim.api.nvim_set_keymap("i", "<C-Tab>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
-
 -- vim.cmd('colorscheme flexoki')
 -- lvim.colorscheme = "flexoki"
 -- lvim.colorscheme = "desert"
